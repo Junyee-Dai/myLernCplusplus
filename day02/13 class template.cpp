@@ -22,6 +22,7 @@ public:
 };
 
 void test01(){
+    // Person p1("sun", 999);//错误，类模板没有自动类型推导
     // 指定NameType 为string类型，AgeType 为 int类型
 	Person<string, int>P1("孙悟空", 999);
 	P1.showPerson();
